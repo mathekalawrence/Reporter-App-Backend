@@ -10,6 +10,8 @@ button.addEventListener('click',()=>{
     var obj = {
         description:description.value,
         incident:incident.value,
+        vehicles:vehicles.value,
+        casualties:casualties.value,
     }
 
 })
