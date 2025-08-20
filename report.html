@@ -41,31 +41,31 @@
      </nav>
 
     <div class="report-box">
-        <form action="">
-    <h2 id="r">Report Incident</h2>
-    <div class="input-box">
+        <form action="" class="form">
+     <h2 id="r">Report Incident</h2>
+     <div class="input-box">
         <span class="icon"><ion-icon name="person-circle-outline"></ion-icon></span>
-        <input type="text" required rows="" cols="" id="description">
+        <input type="text" rows="" cols="" name="description" id="description" required>
         <label>Description</label>
     </div>
 
-    <div class="input-box">
+     <div class="input-box">
         <span class="icon"><ion-icon name="mail"></ion-icon></span>
-        <input type="text" id="incident" required>
+        <input type="text" id="incident" name="email" name="incident" required>
         <label>Incident Type</label>
-    </div>
+     </div>
 
-    <div class="input-box">
+     <div class="input-box">
         <span class="icon"><ion-icon name="lock-closed"></ion-icon></span>
-        <input type="text" id="vehicles" required>
+        <input type="text" id="vehicles" name="vehicles" required>
         <label>Vehicles Involved</label>
-    </div>
+     </div>
 
-    <div class="input-box">
+     <div class="input-box">
         <span class="icon"><ion-icon name="lock-closed"></ion-icon></span>
-        <input type="number" id="casualties" required>
+        <input type="number" id="casualties" name="casualties" required>
         <label>Number of Casualties</label>
-    </div>
+     </div>
     <!--
     <div class="remember-forgot">
         <label><input type="checkbox">Remember me</label> 
@@ -73,12 +73,12 @@
     </div>
     -->
   <div>
-    <button type="submit" class="btn btn-primary"><i class="fa fa-paper-plane" aria-hidden="true"></i></i>Report</button><br>
+    <button type="submit" class="btn btn-primary" name="submit"><i class="fa fa-paper-plane" aria-hidden="true"></i></i>Report</button><br>
     </div>
     <br>
 
     <div>
-    <button type="submit" class="btn-info btn btn-block"><i class="fa fa-refresh" aria-hidden="true"></i>Reset</button>
+    <button type="submit" class="btn-info btn btn-block" name="reset"><i class="fa fa-refresh" aria-hidden="true"></i>Reset</button>
     </div>
     
 </form>
