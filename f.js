@@ -12,6 +12,14 @@ button.addEventListener('click',()=>{
         incident:incident.value,
         vehicles:vehicles.value,
         casualties:casualties.value,
-    }
+    };
+
+    fetch("/info",{
+        method:"POST",
+        headers:{
+            "Content-type":"application/json"
+        },
+        body:JSON.stringify(obj)
+    })
 
 })
